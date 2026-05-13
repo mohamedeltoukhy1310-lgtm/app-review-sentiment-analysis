@@ -1,0 +1,12 @@
+Open a terminal inside the project folder, then run:
+
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python src/train_baseline.py
+python src/train_deep.py --models TextCNN --epochs 2 --max-train-samples 12000
+python src/train_deep.py --models BiLSTM --epochs 1 --max-train-samples 4000
+python src/make_plots.py
+
+streamlit run app/streamlit_app.py

@@ -1,0 +1,6 @@
+__pycache__/
+.ipynb_checkpoints/
+models/*.pt
+models/distilbert_campuscare/
+outputs/distilbert_checkpoints/
+*.pyc
